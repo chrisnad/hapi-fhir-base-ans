@@ -1,0 +1,444 @@
+{
+  "resourceType": "Bundle",
+  "meta": {
+    "lastUpdated": "2020-07-28T17:21:58.109+02:00",
+    "profile": [
+      "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/bundle-rass",
+      "http://hl7.org/fhir/StructureDefinition/Bundle"
+    ]
+  },
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "http://www.asipsante.org/fhir/practitioner-rass/2820616",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "2820616",
+        "meta": {
+          "lastUpdated": "2017-10-31T10:30:47.000+01:00",
+          "source": "https://annuaire.sante.fr",
+          "profile": [
+            "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitioner-rass"
+          ]
+        },
+        "language": "fr",
+        "extension": [
+          {
+            "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitioner-nationality",
+            "extension": [
+              {
+                "url": "code",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.250.1.213.2.24",
+                      "code": "99000"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitioner-birthPlace",
+            "valueAddress": {
+              "extension": [
+                {
+                  "url": "http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code",
+                  "valueCode": "49099"
+                },
+                {
+                  "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/address-country-code",
+                  "valueCode": "99000"
+                }
+              ],
+              "city": "Cholet",
+              "country": "France"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.250.1.71.1.2.15",
+                  "code": "8"
+                }
+              ]
+            },
+            "system": "urn:oid:1.2.250.1.71.4.2.1",
+            "value": "10100951994"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "usual",
+            "family": "PAPIN",
+            "given": [
+              "GREGORY"
+            ],
+            "prefix": [
+              "M"
+            ]
+          },
+          {
+            "use": "official",
+            "family": "PAPIN",
+            "given": [
+              "GREGORY",
+              "SERGE",
+              "ARMAND"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0689275883",
+            "use": "old",
+            "rank": 1
+          },
+          {
+            "system": "email",
+            "value": "grego.papin@gmail.com",
+            "use": "old"
+          }
+        ],
+        "address": [
+          {
+            "extension": [
+              {
+                "url": "http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code",
+                "valueCode": "75056"
+              },
+              {
+                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/address-country-code",
+                "valueCode": "99000"
+              }
+            ],
+            "line": [
+              null
+            ],
+            "_line": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                    "valueString": "6"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase",
+                    "valueString": "RUE COYSEVOX"
+                  }
+                ]
+              }
+            ],
+            "city": "Paris",
+            "postalCode": "75018",
+            "country": "France"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1984-04-13",
+        "qualification": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.250.1.213.1.6.1.32",
+                  "code": "DSM02"
+                },
+                {
+                  "system": "urn:oid:1.2.250.1.213.1.6.1.36",
+                  "code": "DES"
+                }
+              ]
+            },
+            "period": {
+              "start": "2017-10-31T00:00:00+01:00"
+            },
+            "issuer": {
+              "identifier": {
+                "system": "urn:oid:1.2.250.1.213.1.6.4.1",
+                "value": "UP5"
+              }
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "urn:oid:1.2.250.1.213.1.6.1.31",
+                  "code": "DE05"
+                },
+                {
+                  "system": "urn:oid:1.2.250.1.213.1.6.1.36",
+                  "code": "DE"
+                }
+              ]
+            },
+            "period": {
+              "start": "2017-10-31T00:00:00+01:00"
+            },
+            "issuer": {
+              "identifier": {
+                "system": "urn:oid:1.2.250.1.213.1.6.4.1",
+                "value": "UP5"
+              }
+            }
+          }
+        ],
+        "communication": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.250.1.71.2.10",
+                "code": "en"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "http://www.asipsante.org/fhir/practitionerRole-professionalRole-rass/3373501",
+      "resource": {
+        "resourceType": "PractitionerRole",
+        "id": "3373501",
+        "meta": {
+          "lastUpdated": "2017-10-31T10:30:47.000+01:00",
+          "source": "https://annuaire.sante.fr",
+          "profile": [
+            "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-professionalRole-rass"
+          ]
+        },
+        "language": "fr",
+        "extension": [
+          {
+            "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-registration",
+            "extension": [
+              {
+                "url": "registeringOrganization",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "CNOM"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "registeringOrganizationDetail",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.250.1.71.1.2.16",
+                      "code": "75"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "period",
+                "valuePeriod": {
+                  "start": "2017-10-31T00:00:00+01:00"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-smartCard",
+            "extension": [
+              {
+                "url": "type",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2250.1.71.1.2.2",
+                      "code": "CPS"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "number",
+                "valueString": "2600667897"
+              },
+              {
+                "url": "period",
+                "valuePeriod": {
+                  "start": "2017-11-02T00:00:00+01:00",
+                  "end": "2020-11-02T00:00:00+01:00"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/digitalCertificate",
+            "extension": [
+              {
+                "url": "serialNumber",
+                "valueString": "0000E9A921"
+              },
+              {
+                "url": "issuer",
+                "valueString": "CN=GIP-CPS CLASSE-1,OU=GIP-CPS PROFESSIONNEL,O=GIP-CPS,C=FR"
+              },
+              {
+                "url": "subject",
+                "valueString": "CN=810100951994+SN=PAPIN+GN=GREGORY,OU=Médecin,O=GIP-CPS,C=FR"
+              },
+              {
+                "url": "keyUsage",
+                "valueString": "80"
+              },
+              {
+                "url": "domain"
+              },
+              {
+                "url": "value"
+              },
+              {
+                "url": "validity",
+                "valuePeriod": {
+                  "start": "2017-11-02T00:00:00+01:00",
+                  "end": "2020-11-02T00:00:00+01:00"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/digitalCertificate",
+            "extension": [
+              {
+                "url": "serialNumber",
+                "valueString": "0000E9A922"
+              },
+              {
+                "url": "issuer",
+                "valueString": "CN=GIP-CPS CLASSE-1,OU=GIP-CPS PROFESSIONNEL,O=GIP-CPS,C=FR"
+              },
+              {
+                "url": "subject",
+                "valueString": "CN=810100951994+SN=PAPIN+GN=GREGORY,OU=Médecin,O=GIP-CPS,C=FR"
+              },
+              {
+                "url": "keyUsage",
+                "valueString": "C0"
+              },
+              {
+                "url": "domain"
+              },
+              {
+                "url": "value"
+              },
+              {
+                "url": "validity",
+                "valuePeriod": {
+                  "start": "2017-11-02T00:00:00+01:00",
+                  "end": "2020-11-02T00:00:00+01:00"
+                }
+              }
+            ]
+          },
+          {
+            "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-name",
+            "valueHumanName": {
+              "family": "PAPIN",
+              "given": [
+                "GREGORY"
+              ],
+              "suffix": [
+                "DR"
+              ]
+            }
+          },
+          {
+            "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-registration",
+            "extension": [
+              {
+                "url": "registeringOrganization",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "code": "CNOM"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "registeringOrganizationDetail",
+                "valueCodeableConcept": {
+                  "coding": [
+                    {
+                      "system": "urn:oid:1.2.250.1.71.1.2.16",
+                      "code": "75"
+                    }
+                  ]
+                }
+              },
+              {
+                "url": "period",
+                "valuePeriod": {
+                  "start": "2017-10-31T00:00:00+01:00"
+                }
+              },
+              {
+                "url": "isFirst",
+                "valueBoolean": true
+              }
+            ]
+          }
+        ],
+        "active": true,
+        "period": {
+          "start": "2017-10-31T00:00:00+01:00"
+        },
+        "practitioner": {
+          "identifier": {
+            "system": "urn:oid:1.2.250.1.71.4.2.1",
+            "value": "10100951994"
+          }
+        },
+        "code": [
+          {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.250.1.71.1.2.7",
+                "code": "10"
+              },
+              {
+                "system": "urn:oid:1.2.250.1.213.1.6.1.10",
+                "code": "C"
+              }
+            ]
+          }
+        ],
+        "specialty": [
+          {
+            "extension": [
+              {
+                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/codeableConcept-period",
+                "valuePeriod": {
+                  "start": "2017-10-31T00:00:00+01:00"
+                }
+              }
+            ],
+            "coding": [
+              {
+                "system": "urn:oid:1.2.250.1.213.2.28",
+                "code": "SM02"
+              },
+              {
+                "system": "urn:oid:1.2.250.1.213.1.6.1.16",
+                "code": "S"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

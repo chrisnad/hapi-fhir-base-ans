@@ -1,0 +1,1337 @@
+{
+    "resourceType": "Bundle",
+    "id": "c91b9d06-8efb-4755-81f8-2dc9d37752dd",
+    "type": "searchset",
+    "timestamp": "2021-05-19T16:26:36.00Z",
+    "entry": [
+        {
+            "type": "collection",
+            "entry": [
+                {
+                    "fullUrl": "https://apifhir.annuaire.sante.fr/exposed/Practitioner/445853",
+                    "resource": {
+                        "name": [
+                            {
+                                "family": "NAULIN IFI",
+                                "prefix": [
+                                    "MME"
+                                ],
+                                "given": [
+                                    "CHANTAL"
+                                ],
+                                "use": "usual"
+                            },
+                            {
+                                "family": "NAULIN",
+                                "prefix": [
+                                    "MME"
+                                ],
+                                "given": [
+                                    "CHANTAL",
+                                    "JACQUELINE",
+                                    "GABRIELLE"
+                                ],
+                                "use": "official"
+                            }
+                        ],
+                        "meta": {
+                            "profile": [
+                                "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitioner-rass"
+                            ],
+                            "source": "https://annuaire.sante.fr",
+                            "lastUpdated": "2021-02-16T05:08:12.00Z",
+                            "versionId": "0.1"
+                        },
+                        "telecom": [],
+                        "resourceType": "Practitioner",
+                        "gender": "female",
+                        "qualification": [
+                            {
+                                "issuer": {
+                                    "identifier": {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.4.1",
+                                        "value": "UP7"
+                                    }
+                                },
+                                "period": {
+                                    "start": "1971-09-01"
+                                },
+                                "code": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:1.2.250.1.213.1.6.1.31",
+                                            "code": "DE03"
+                                        },
+                                        {
+                                            "system": "urn:oid:1.2.250.1.213.1.6.1.36",
+                                            "code": "DE"
+                                        }
+                                    ]
+                                },
+                                "identifier": [
+                                    {
+                                        "value": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "communication": [
+                            {
+                                "extension": [
+                                    {
+                                        "valuePeriod": {
+                                            "end": null
+                                        },
+                                        "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/codeableConcept-period"
+                                    }
+                                ],
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.71.2.10",
+                                        "code": "FR"
+                                    }
+                                ]
+                            }
+                        ],
+                        "birthDate": "1948-01-27",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:1.2.250.1.71.4.2.1",
+                                "value": "810000034321",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "IDNPS"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            },
+                            {
+                                "system": "http://rpps.fr",
+                                "value": "10000034321",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "RPPS"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            }
+                        ],
+                        "id": "445853",
+                        "extension": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "code",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "urn:oid:1.2.250.1.213.2.24",
+                                                    "code": "99000"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "valuePeriod": {
+                                            "start": null
+                                        },
+                                        "url": "period"
+                                    }
+                                ],
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitioner-nationality"
+                            },
+                            {
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitioner-birthPlace",
+                                "valueAddress": {
+                                    "extension": [
+                                        {
+                                            "url": "http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code",
+                                            "valueCode": "92040"
+                                        },
+                                        {
+                                            "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/address-country-code",
+                                            "valueCode": "99000"
+                                        }
+                                    ],
+                                    "text": "ISSY LES MOULINEAUX"
+                                }
+                            }
+                        ],
+                        "active": true,
+                        "language": "fr",
+                        "address": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code",
+                                        "valueCode": "75107"
+                                    },
+                                    {
+                                        "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/address-country-code",
+                                        "valueCode": null
+                                    }
+                                ],
+                                "postalCode": "75007",
+                                "_line": [
+                                    {
+                                        "extension": [
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                                "valueString": "4"
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType",
+                                                "valueString": "PL"
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase",
+                                                "valueString": "DU PRESIDENT MITHONARD"
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf",
+                                                "valueString": null
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+                                                "valueString": null
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+                                                "valueString": null
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
+                                                "valueString": null
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "city": "75007 PARIS",
+                                "period": {
+                                    "end": null
+                                },
+                                "use": null
+                            }
+                        ]
+                    }
+                },
+                {
+                    "fullUrl": "https://apifhir.annuaire.sante.fr/exposed/PractitionerRole/pr55077",
+                    "resource": {
+                        "id": "55077",
+                        "meta": {
+                            "profile": [
+                                "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-professionalRole-rass"
+                            ],
+                            "source": "https://annuaire.sante.fr",
+                            "lastUpdated": "2021-04-30T07:48:44.00Z",
+                            "versionId": "0.1"
+                        },
+                        "extension": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "serialNumber",
+                                        "valueString": "10028efd6c8d4739efcdf0d28bb06050"
+                                    },
+                                    {
+                                        "url": "date",
+                                        "valueMeta": {
+                                            "profile": [
+                                                "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/digitalCertificate"
+                                            ],
+                                            "source": "https://annuaire.sante.fr",
+                                            "lastUpdated": "2021-04-30T07:48:44.00Z",
+                                            "versionId": "0.1"
+                                        }
+                                    },
+                                    {
+                                        "url": "issuer",
+                                        "valueString": "CN=AC IGC-SANTE FORT PERSONNES,OU=IGC-SANTE,OU=0002 187512751,O=ASIP-SANTE,C=FR"
+                                    },
+                                    {
+                                        "url": "subject",
+                                        "valueString": "givenName=CHANTAL + SN=NAULIN IFI + CN=810000034321, TITLE=Chirurgien-Dentiste, C=FR"
+                                    },
+                                    {
+                                        "valuePeriod": {
+                                            "end": "2024-02-16",
+                                            "start": "2021-02-16"
+                                        },
+                                        "url": "validity"
+                                    },
+                                    {
+                                        "url": "keyUsage",
+                                        "valueString": "80"
+                                    },
+                                    {
+                                        "url": "value",
+                                        "valueAttachement": {
+                                            "title": null
+                                        }
+                                    }
+                                ],
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/digitalCertificate"
+                            },
+                            {
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-name",
+                                "valueHumanName": {
+                                    "family": "NAULIN IFI",
+                                    "given": [
+                                        "CHANTAL"
+                                    ],
+                                    "suffix": [
+                                        "DR"
+                                    ]
+                                }
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "valueBoolean": true,
+                                        "url": "isFirst"
+                                    },
+                                    {
+                                        "url": "registeringOrganization",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "code": "ONCD",
+                                                    "system": "urn:oid:1.2.250.1.213.1.6.1.57"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "valuePeriod": {
+                                            "start": "1971-12-01"
+                                        },
+                                        "url": "period"
+                                    },
+                                    {
+                                        "url": "registeringOrganizationDetail",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "code": "75",
+                                                    "system": "urn:oid:1.2.250.1.71.1.2.16"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-registration"
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "registeringOrganization",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "urn:oid:1.2.250.1.213.1.6.1.57",
+                                                    "code": "ONCD"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "url": "registeringOrganizationDetail",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "urn:oid:1.2.250.1.71.1.2.16",
+                                                    "code": "75"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "valuePeriod": {
+                                            "end": null,
+                                            "start": "1971-12-01"
+                                        },
+                                        "url": "period"
+                                    },
+                                    {
+                                        "url": "status",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "urn:oid:1.2.250.1.213.1.6.1.12",
+                                                    "code": "D"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "url": "hostingDepartment",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "system": "urn:oid:1.2.250.1.71.1.2.16",
+                                                    "code": null
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "valueBoolean": false,
+                                        "url": "isFirst"
+                                    }
+                                ],
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-registration"
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "number",
+                                        "valueString": "2800896577"
+                                    },
+                                    {
+                                        "url": "date",
+                                        "valueMeta": {
+                                            "profile": [
+                                                "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-smartCard"
+                                            ],
+                                            "source": "https://annuaire.sante.fr",
+                                            "lastUpdated": "2021-03-19T05:10:36.00Z",
+                                            "versionId": "0.1"
+                                        }
+                                    },
+                                    {
+                                        "valuePeriod": {
+                                            "end": "2024-02-16",
+                                            "start": "2021-02-16"
+                                        },
+                                        "url": "period"
+                                    },
+                                    {
+                                        "url": "cancellationDate",
+                                        "valueDateTime": null
+                                    },
+                                    {
+                                        "url": "type",
+                                        "valueCodeableConcept": {
+                                            "coding": [
+                                                {
+                                                    "code": "CPS",
+                                                    "system": "urn:oid:1.2.250.1.213.1.6.1.106"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ],
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-smartCard"
+                            },
+                            {
+                                "extension": [
+                                    {
+                                        "url": "serialNumber",
+                                        "valueString": "10028efd6c8d4739749a5f97814595fe"
+                                    },
+                                    {
+                                        "url": "date",
+                                        "valueMeta": {
+                                            "profile": [
+                                                "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/digitalCertificate"
+                                            ],
+                                            "source": "https://annuaire.sante.fr",
+                                            "lastUpdated": "2021-04-30T07:48:44.00Z",
+                                            "versionId": "0.1"
+                                        }
+                                    },
+                                    {
+                                        "url": "issuer",
+                                        "valueString": "CN=AC IGC-SANTE FORT PERSONNES,OU=IGC-SANTE,OU=0002 187512751,O=ASIP-SANTE,C=FR"
+                                    },
+                                    {
+                                        "url": "subject",
+                                        "valueString": "givenName=CHANTAL + SN=NAULIN IFI + CN=810000034321, TITLE=Chirurgien-Dentiste, C=FR"
+                                    },
+                                    {
+                                        "valuePeriod": {
+                                            "end": "2024-02-16",
+                                            "start": "2021-02-16"
+                                        },
+                                        "url": "validity"
+                                    },
+                                    {
+                                        "url": "keyUsage",
+                                        "valueString": "40"
+                                    },
+                                    {
+                                        "url": "value",
+                                        "valueAttachement": {
+                                            "title": null
+                                        }
+                                    }
+                                ],
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/digitalCertificate"
+                            }
+                        ],
+                        "active": true,
+                        "language": "fr",
+                        "resourceType": "PractitionerRole",
+                        "practitioner": {
+                            "identifier": {
+                                "system": "urn:oid:1.2.250.1.71.4.2.1",
+                                "value": "810000034321",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "IDNPS"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            }
+                        },
+                        "period": {
+                            "end": null,
+                            "start": "1971-12-01"
+                        },
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.71.1.2.7",
+                                        "code": "40"
+                                    },
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.10",
+                                        "code": "C"
+                                    }
+                                ]
+                            }
+                        ],
+                        "specialty": []
+                    }
+                },
+                {
+                    "fullUrl": "https://apifhir.annuaire.sante.fr/exposed/PractitionerRole/or2486564",
+                    "resource": {
+                        "meta": {
+                            "profile": [
+                                "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-organizationalRole-rass"
+                            ],
+                            "source": "https://annuaire.sante.fr",
+                            "lastUpdated": "2016-10-14T05:00:51.00Z",
+                            "versionId": "0.1"
+                        },
+                        "organization": {
+                            "identifier": {
+                                "system": "https://annuaire.sante.fr",
+                                "value": "R10100000173205",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "INTRN"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            }
+                        },
+                        "telecom": [],
+                        "location": [
+                            {
+                                "reference": "#604896"
+                            }
+                        ],
+                        "resourceType": "PractitionerRole",
+                        "period": {
+                            "end": null,
+                            "start": "2016-01-02"
+                        },
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.17",
+                                        "code": "FON-17"
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.19",
+                                        "code": "GENR01"
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.18",
+                                        "code": "L"
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.22",
+                                        "code": "ACT-LIB-01"
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.23",
+                                        "code": null
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.21",
+                                        "code": null
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.2.37",
+                                        "code": null
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.71.4.2.6",
+                                        "code": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "contained": [
+                            {
+                                "resourceType": "Location",
+                                "id": "604896",
+                                "address": {
+                                    "extension": [
+                                        {
+                                            "url": "http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code",
+                                            "valueCode": "75116"
+                                        },
+                                        {
+                                            "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/address-country-code",
+                                            "valueCode": null
+                                        }
+                                    ],
+                                    "postalCode": "75116",
+                                    "_line": [
+                                        {
+                                            "extension": [
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                                    "valueString": "147"
+                                                },
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType",
+                                                    "valueString": "R"
+                                                },
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase",
+                                                    "valueString": "DE LA POMPE"
+                                                },
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf",
+                                                    "valueString": null
+                                                },
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+                                                    "valueString": null
+                                                },
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+                                                    "valueString": "SELARL DOCTEUR AMELIE REIBEL DOMERGUE"
+                                                },
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
+                                                    "valueString": null
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "city": "75116 PARIS 16",
+                                    "period": {
+                                        "end": null
+                                    },
+                                    "use": null
+                                }
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://annuaire.sante.fr",
+                                "value": "1010774153"
+                            }
+                        ],
+                        "id": "2486564",
+                        "extension": [
+                            {
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-partOf",
+                                "valueReference": {
+                                    "reference": "practitionerRole-professionalRole-rass/55077"
+                                }
+                            },
+                            {
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-endCause",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:1.2.250.1.213.1.6.1.20",
+                                            "code": null
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-practiceRegion",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:1.2.250.1.213.2.25",
+                                            "code": null
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "active": true,
+                        "language": "fr"
+                    }
+                },
+                {
+                    "fullUrl": "https://apifhir.annuaire.sante.fr/exposed/Organization/604896",
+                    "resource": {
+                        "id": "604896",
+                        "meta": {
+                            "profile": [
+                                "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/organization-rass"
+                            ],
+                            "source": "https://annuaire.sante.fr",
+                            "lastUpdated": "2016-02-11T05:01:50.00Z",
+                            "versionId": "0.1"
+                        },
+                        "name": "SELARL DOCTEUR AMELIE REIBEL DOMERGUE",
+                        "telecom": [],
+                        "active": true,
+                        "language": "fr",
+                        "address": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code",
+                                        "valueCode": "75116"
+                                    },
+                                    {
+                                        "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/address-country-code",
+                                        "valueCode": null
+                                    }
+                                ],
+                                "postalCode": "75116",
+                                "_line": [
+                                    {
+                                        "extension": [
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                                "valueString": "147"
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType",
+                                                "valueString": "R"
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase",
+                                                "valueString": "DE LA POMPE"
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf",
+                                                "valueString": null
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+                                                "valueString": null
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+                                                "valueString": null
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
+                                                "valueString": null
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "city": "75116 PARIS 16",
+                                "period": {
+                                    "end": null
+                                },
+                                "use": null
+                            }
+                        ],
+                        "resourceType": "Organization",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:1.2.250.1.71.4.2.2",
+                                "value": "379868479100022",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "IDNST"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            },
+                            {
+                                "system": "http://sirene.fr",
+                                "value": "79868479100022",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "SIRET"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            },
+                            {
+                                "system": "https://annuaire.sante.fr",
+                                "value": "R10100000173205",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "INTRN"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "fullUrl": "https://apifhir.annuaire.sante.fr/exposed/PractitionerRole/or3590948",
+                    "resource": {
+                        "meta": {
+                            "profile": [
+                                "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-organizationalRole-rass"
+                            ],
+                            "source": "https://annuaire.sante.fr",
+                            "lastUpdated": "2016-10-14T05:00:51.00Z",
+                            "versionId": "0.1"
+                        },
+                        "organization": {
+                            "identifier": {
+                                "system": "https://annuaire.sante.fr",
+                                "value": "R10100000173208",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "INTRN"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            }
+                        },
+                        "telecom": [],
+                        "location": [
+                            {
+                                "reference": "#604737"
+                            }
+                        ],
+                        "resourceType": "PractitionerRole",
+                        "period": {
+                            "end": null,
+                            "start": "2016-09-01"
+                        },
+                        "code": [
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.17",
+                                        "code": "FON-17"
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.19",
+                                        "code": "GENR01"
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.18",
+                                        "code": "L"
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.22",
+                                        "code": "ACT-LIB-02"
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.23",
+                                        "code": null
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.1.6.1.21",
+                                        "code": null
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.213.2.37",
+                                        "code": null
+                                    }
+                                ]
+                            },
+                            {
+                                "coding": [
+                                    {
+                                        "system": "urn:oid:1.2.250.1.71.4.2.6",
+                                        "code": null
+                                    }
+                                ]
+                            }
+                        ],
+                        "contained": [
+                            {
+                                "resourceType": "Location",
+                                "id": "604737",
+                                "address": {
+                                    "extension": [
+                                        {
+                                            "url": "http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code",
+                                            "valueCode": "75116"
+                                        },
+                                        {
+                                            "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/address-country-code",
+                                            "valueCode": null
+                                        }
+                                    ],
+                                    "postalCode": "75116",
+                                    "_line": [
+                                        {
+                                            "extension": [
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                                    "valueString": "147"
+                                                },
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType",
+                                                    "valueString": "R"
+                                                },
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase",
+                                                    "valueString": "DE LA POMPE"
+                                                },
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf",
+                                                    "valueString": null
+                                                },
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+                                                    "valueString": null
+                                                },
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+                                                    "valueString": "SELARL DOCTEUR MAUPILE"
+                                                },
+                                                {
+                                                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
+                                                    "valueString": null
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "city": "75116 PARIS 16",
+                                    "period": {
+                                        "end": null
+                                    },
+                                    "use": null
+                                }
+                            }
+                        ],
+                        "identifier": [
+                            {
+                                "system": "https://annuaire.sante.fr",
+                                "value": "1010876541"
+                            }
+                        ],
+                        "id": "3590948",
+                        "extension": [
+                            {
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-partOf",
+                                "valueReference": {
+                                    "reference": "practitionerRole-professionalRole-rass/55077"
+                                }
+                            },
+                            {
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-endCause",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:1.2.250.1.213.1.6.1.20",
+                                            "code": null
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-practiceRegion",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "system": "urn:oid:1.2.250.1.213.2.25",
+                                            "code": null
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "active": true,
+                        "language": "fr"
+                    }
+                },
+                {
+                    "fullUrl": "https://apifhir.annuaire.sante.fr/exposed/Organization/604737",
+                    "resource": {
+                        "id": "604737",
+                        "meta": {
+                            "profile": [
+                                "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/organization-rass"
+                            ],
+                            "source": "https://annuaire.sante.fr",
+                            "lastUpdated": "2016-02-11T05:01:50.00Z",
+                            "versionId": "0.1"
+                        },
+                        "name": "SELARL DOCTEUR MAUPILE",
+                        "telecom": [],
+                        "active": true,
+                        "language": "fr",
+                        "address": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "http://www.interopsante.org/fhir/structuredefinition/datatype/fr-address-insee-code",
+                                        "valueCode": "75116"
+                                    },
+                                    {
+                                        "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/address-country-code",
+                                        "valueCode": null
+                                    }
+                                ],
+                                "postalCode": "75116",
+                                "_line": [
+                                    {
+                                        "extension": [
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                                                "valueString": "147"
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType",
+                                                "valueString": "R"
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase",
+                                                "valueString": "DE LA POMPE"
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-careOf",
+                                                "valueString": null
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix",
+                                                "valueString": null
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+                                                "valueString": null
+                                            },
+                                            {
+                                                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
+                                                "valueString": null
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "city": "75116 PARIS 16",
+                                "period": {
+                                    "end": null
+                                },
+                                "use": null
+                            }
+                        ],
+                        "resourceType": "Organization",
+                        "identifier": [
+                            {
+                                "system": "urn:oid:1.2.250.1.71.4.2.2",
+                                "value": "379845149800025",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "IDNST"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            },
+                            {
+                                "system": "http://sirene.fr",
+                                "value": "79845149800025",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "SIRET"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            },
+                            {
+                                "system": "https://annuaire.sante.fr",
+                                "value": "R10100000173208",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "INTRN"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "fullUrl": "https://apifhir.annuaire.sante.fr/exposed/PractitionerRole/am31027171",
+                    "resource": {
+                        "id": "31027171",
+                        "active": true,
+                        "meta": {
+                            "profile": [
+                                "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-ameli-rass"
+                            ],
+                            "source": "https://annuaire.sante.fr",
+                            "lastUpdated": "2021-04-26T09:30:41.00Z",
+                            "versionId": "0.1"
+                        },
+                        "extension": [
+                            {
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-partOf",
+                                "valueReference": {
+                                    "reference": "practitionerRole-organizationalRole-rass/2486564"
+                                }
+                            },
+                            {
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-contracted",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "code": "c2",
+                                            "system": "urn:oid:1.2.250.1.213.1.6.1.135"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "valueBoolean": false,
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-hasCAS"
+                            },
+                            {
+                                "valueBoolean": false,
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-vitaleAccepted"
+                            }
+                        ],
+                        "telecom": [
+                            {
+                                "system": "phone",
+                                "value": "0156265900"
+                            }
+                        ],
+                        "availableTime": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-activityType",
+                                        "valueCode": null
+                                    },
+                                    {
+                                        "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-appointmentRequired",
+                                        "valueString": null
+                                    },
+                                    {
+                                        "valueBoolean": false,
+                                        "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-homeCare"
+                                    }
+                                ],
+                                "availableEndTime": null,
+                                "daysOfWeek": [],
+                                "availableStartTime": null
+                            }
+                        ],
+                        "language": "fr",
+                        "resourceType": "PractitionerRole",
+                        "practitioner": {
+                            "identifier": {
+                                "system": "urn:oid:1.2.250.1.71.4.2.1",
+                                "value": "810000034321",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "IDNPS"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            }
+                        }
+                    }
+                },
+                {
+                    "fullUrl": "https://apifhir.annuaire.sante.fr/exposed/PractitionerRole/am31534413",
+                    "resource": {
+                        "id": "31534413",
+                        "active": true,
+                        "meta": {
+                            "profile": [
+                                "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-ameli-rass"
+                            ],
+                            "source": "https://annuaire.sante.fr",
+                            "lastUpdated": "2021-04-26T09:30:41.00Z",
+                            "versionId": "0.1"
+                        },
+                        "extension": [
+                            {
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-partOf",
+                                "valueReference": {
+                                    "reference": "practitionerRole-organizationalRole-rass/3590948"
+                                }
+                            },
+                            {
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-contracted",
+                                "valueCodeableConcept": {
+                                    "coding": [
+                                        {
+                                            "code": "c2",
+                                            "system": "urn:oid:1.2.250.1.213.1.6.1.135"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "valueBoolean": false,
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-hasCAS"
+                            },
+                            {
+                                "valueBoolean": false,
+                                "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-vitaleAccepted"
+                            }
+                        ],
+                        "telecom": [],
+                        "availableTime": [
+                            {
+                                "extension": [
+                                    {
+                                        "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-activityType",
+                                        "valueCode": null
+                                    },
+                                    {
+                                        "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-appointmentRequired",
+                                        "valueString": null
+                                    },
+                                    {
+                                        "valueBoolean": false,
+                                        "url": "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitionerRole-homeCare"
+                                    }
+                                ],
+                                "availableEndTime": null,
+                                "daysOfWeek": [],
+                                "availableStartTime": null
+                            }
+                        ],
+                        "language": "fr",
+                        "resourceType": "PractitionerRole",
+                        "practitioner": {
+                            "identifier": {
+                                "system": "urn:oid:1.2.250.1.71.4.2.1",
+                                "value": "810000034321",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://interopsante.org/CodeSystem/v2-0203",
+                                            "code": "IDNPS"
+                                        }
+                                    ]
+                                },
+                                "use": "official"
+                            }
+                        }
+                    }
+                }
+            ],
+            "resourceType": "Bundle",
+            "meta": {
+                "lastUpdated": "2021-04-30T07:48:44.00Z",
+                "profile": [
+                    "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/practitioner-bundle-rass"
+                ]
+            }
+        }
+    ],
+    "link": [
+        {
+            "relation": "self",
+            "url": "https://apifhir.annuaire.sante.fr/ws-sync/$rb_pp?active=true&ServiceMode=FULL&identifier=810000034321"
+        },
+        {
+            "relation": "next",
+            "url": "https://apifhir.annuaire.sante.fr/ws-sync/$rb_pp?active=true&ServiceMode=FULL&identifier=810000034321&stateid=MjAyMS0wNC0zMFQwNTo0ODo0NC4wMDBaODEwMDAwMDM0MzIxKzA1MTgwN2ZmY2YyZTYyMjc3OTAwMGRkMTg3ZjUyZjg5"
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+  "resourceType": "Bundle",
+  "entry": [
+    {
+      "fullUrl": "http://www.asipsante.org/fhir/organization-rass/750712184",
+      "resource": {
+        "resourceType": "Organization",
+        "meta": {
+          "profile": [
+            "https://apifhir.annuaire.sante.fr/exposed/structuredefinition/organization-rass"
+          ]
+        },
+        "language": "fr",
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://www.interopsante.org/pam-fr/valuesets/identifier-type",
+                  "code": "INTRN"
+                }
+              ]
+            },
+            "system": "https://annuaire.sante.fr",
+            "value": "750712184"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://www.interopsante.org/pam-fr/valuesets/identifier-type",
+                  "code": "IDNST"
+                }
+              ]
+            },
+            "system": "urn:oid:1.2.250.1.71.4.2.2",
+            "value": "750712184"
+          }
+        ],
+        "active": true,
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "https://simplifier.net/FrenchProfiledFHIRAr/fr-organization-type",
+                "code": "LEGAL-ENTITY"
+              },
+              {
+                "system": "urn:oid:1.2.250.1.213.1.6.1.47",
+                "code": "86.10Z"
+              },
+              {
+                "system": "urn:oid:1.2.250.1.213.1.6.1.44",
+                "code": "15"
+              }
+            ]
+          }
+        ],
+        "name": "ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS",
+        "alias": [
+          "ASSISTANCE PUBLIQUE-HOPITAUX DE PARIS"
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "0140273000",
+            "use": "old",
+            "rank": 1
+          },
+          {
+            "system": "fax",
+            "value": "0140273784",
+            "use": "old"
+          }
+        ],
+        "address": [
+          {}
+        ],
+        "partOf": {
+          "reference": "organization-rass/null"
+        }
+      }
+    }
+  ]
+}
