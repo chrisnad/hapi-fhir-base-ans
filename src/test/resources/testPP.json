@@ -288,14 +288,15 @@
               },
               {
                 "url": "subject",
-                "valueString": "CN=810100951994+SN=PAPIN+GN=GREGORY,OU=Médecin,O=GIP-CPS,C=FR"
+                "valueString": "CN=810100951994+SN=PAPIN+GN=GREGORY,OU=Mï¿½decin,O=GIP-CPS,C=FR"
               },
               {
                 "url": "keyUsage",
                 "valueString": "80"
               },
               {
-                "url": "domain"
+                "url": "domain",
+				    "valueString": null
               },
               {
                 "url": "value"
@@ -322,7 +323,7 @@
               },
               {
                 "url": "subject",
-                "valueString": "CN=810100951994+SN=PAPIN+GN=GREGORY,OU=Médecin,O=GIP-CPS,C=FR"
+                "valueString": "CN=810100951994+SN=PAPIN+GN=GREGORY,OU=Mï¿½decin,O=GIP-CPS,C=FR"
               },
               {
                 "url": "keyUsage",

@@ -22,7 +22,7 @@
               ]
             },
             "system": "https://annuaire.sante.fr",
-            "value": "750712184"
+            "value": null
           },
           {
             "type": {
@@ -50,8 +50,7 @@
                 "code": "86.10Z"
               },
               {
-                "system": "urn:oid:1.2.250.1.213.1.6.1.44",
-                "code": "15"
+                "system": "urn:oid:1.2.250.1.213.1.6.1.44"
               }
             ]
           }

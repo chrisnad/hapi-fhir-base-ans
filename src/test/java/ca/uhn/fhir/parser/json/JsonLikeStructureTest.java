@@ -47,7 +47,7 @@ public class JsonLikeStructureTest {
 
 		String path = "src/test/resources/";
 
-		File file = new File(path + "prod.json");
+		File file = new File(path + "testPM.json");
 
 		String nextFileContents = null;
 		try {

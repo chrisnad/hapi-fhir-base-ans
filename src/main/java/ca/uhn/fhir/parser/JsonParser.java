@@ -42,6 +42,7 @@ import org.apache.commons.text.WordUtils;
 import org.hl7.fhir.instance.model.api.*;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.Reader;
 import java.io.Writer;
 import java.math.BigDecimal;
@@ -59,8 +60,19 @@ public class JsonParser extends BaseParser implements IJsonLikeParser {
 
 	private static final org.slf4j.Logger ourLog = org.slf4j.LoggerFactory.getLogger(JsonParser.HeldExtension.class);
 
+	private static final Properties nullElements = new Properties();
 	private FhirContext myContext;
 	private boolean myPrettyPrint;
+
+	static {
+		try (InputStream inputStream = JsonParser.class.getResourceAsStream("nullElements.properties"))
+		{
+			nullElements.load(inputStream);
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
 	/**
 	 * Do not use this constructor, the recommended way to obtain a new instance of the JSON parser is to invoke
@@ -362,10 +374,6 @@ public class JsonParser extends BaseParser implements IJsonLikeParser {
 
 			BaseRuntimeChildDefinition nextChild = nextChildElem.getDef();
 
-			if (nextChild.getElementName().equals("active")) {
-				// System.out.println("do nothing");
-			}
-
 			if (nextChildElem.getDef().getElementName().equals("extension") || nextChildElem.getDef().getElementName().equals("modifierExtension")
 				|| nextChild instanceof RuntimeChildDeclaredExtensionDefinition) {
 				if (!haveWrittenExtensions) {
@@ -408,6 +416,18 @@ public class JsonParser extends BaseParser implements IJsonLikeParser {
 			values = preProcessValues(nextChild, theResource, values, nextChildElem, theEncodeContext);
 
 			if (values == null || values.isEmpty()) {
+
+				//TODO : element name properties matcher, match parent as well
+
+				String parentName = "";
+				if (theParent.getDef() != null) {
+					parentName = theParent.getDef().getElementName();
+				}
+
+				if (nullElements.containsKey(nextChild.getElementName()) &&
+					nullElements.getProperty(nextChild.getElementName()).contains(parentName)) {
+					theEventWriter.writeNull(nextChild.getElementName());
+				}
 				continue;
 			}
 
@@ -422,13 +442,17 @@ public class JsonParser extends BaseParser implements IJsonLikeParser {
 			int valueIdx = 0;
 			for (IBase nextValue : values) {
 
-				if (nextValue == null || nextValue.isEmpty()) {
+				BaseRuntimeElementDefinition<?> elementDef = myContext.getElementDefinition(nextValue.getClass());
+
+				if (nextValue.isEmpty()) {
 					if (nextValue instanceof BaseContainedDt) {
 						if (theContainedResource || getContainedResources().isEmpty()) {
 							continue;
 						}
+					} else if (elementDef instanceof RuntimePrimitiveDatatypeDefinition) {
+						theEventWriter.writeNull(nextChild.getElementName());
+						continue;
 					} else {
-						theEventWriter.write(nextChild.getElementName(), (Boolean) null);
 						continue;
 					}
 				}
